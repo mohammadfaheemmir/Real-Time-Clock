@@ -1,0 +1,36 @@
+body {
+    background:radial-gradient( #000000, #000000, #000000);
+    font-family:monospace;
+}
+
+.clock {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    padding:20px;
+    height:5rem;
+    width:10rem;
+    text-align:center;
+    letter-spacing:5px;
+    border-radius:50%;
+    box-shadow:5px 5px 50px 50px rgba(0, 0, 0, 0.699);
+    border-style:inset;
+    border-width:0.1rem;
+    border-left-color:#0c6e22;
+    border-right-color:#6c776e;
+    border-top-color:#d76f30;
+    border-bottom-color:#977f70;
+    color:beige;
+    animation:animaBorder 1s linear infinite;
+}
+
+@keyframes animaBorder {
+    from {
+        border-width:0.1rem;
+    }
+    to {
+        border-width:0.5rem;
+    }
+}
+
